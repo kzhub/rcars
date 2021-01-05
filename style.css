@@ -1,0 +1,89 @@
+body{
+  margin: 0;
+}
+
+ul{
+  list-style: none;
+  display: flex;
+  position: absolute;
+  top:10%;
+  left: 65%;
+}
+li{
+  padding: 10px;
+  font-family: proxima-nova, sans-serif;
+}
+a{
+  text-decoration: none;
+  color:rgb(45, 44, 44);
+  font-weight: bold;
+}
+footer p{
+  font-size: 13px;
+  color:rgb(28, 28, 28);
+  text-align: center;
+  font-weight: 200;
+  padding: 50px;
+}
+p{
+  font-family: proxima-nova, sans-serif;
+}
+.vox{
+  width: 100%;
+  position: relative;
+}
+.text{
+  text-align: center;
+  margin: 120px;
+  opacity:0;
+}
+
+.text p{
+  color: rgb(102, 102, 102);
+  letter-spacing:6px; /* 文字間 */
+  line-height:45px;/* 行間 */
+  font-family: fot-tsukubrdgothic-std, sans-serif;
+  text-align: center;
+  padding-right: 40px;
+}
+.photos{
+  text-align: center;
+
+}
+.photos img{
+  width:24%;
+}
+.fadeInRight{
+  transition: all 1s ease-in;
+  transform: translateX(40px);
+  opacity: 1 !important;
+}
+
+#top{
+  width:100%;
+}
+
+#logo{
+  width: 15%;
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+#reve{
+  width: 23%;
+  position: absolute;
+  top: 90%;
+  left: 65%;
+}
+
+
+@media screen and (max-width: 800px){
+  .text{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 100px;
+  }
+  ul{
+    left: 35c%;
+  }
+}

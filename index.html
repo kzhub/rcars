@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>RCARS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/ypa3auc.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.inview.js"></script>
+  </head>
+
+  <body>
+
+    <main>
+      <header>
+        <div class="vox">
+         <ul>
+          <li><a href="index.html#price">PRICE</a></li>
+          <li><a href="index.html#cars">CARS</a></li>
+          <li><a href="index.html#style">STYLE</a></li>
+          <li><a href="index.html#about">ABOUT</a></li>
+         </ul>
+         <a href="index.html"><img id="reve" src="rev.png" alt=""></a>
+         <a href="index.html"><img id="logo" src="logo.png" alt=""></a>
+         <img id="top" src="car.jpg" alt="">
+        </div>
+      </header>
+
+    <div class="text">
+      <p>環境に配慮した車でアウトドアを楽しむ特別なひとときを<br>海や山など行く場所を選びません<br>車中泊も可能なトレーラーカーも取り揃えています<br>
+        SNSでは新たなアウトドアのスタイルを発信しています</p>
+    </div>
+
+    <div class="photos">
+      <img src="photo1.jpg" alt="">
+      <img src="photo2.jpg" alt="">
+      <img src="photo3.jpg" alt="">
+    </div>
+    </main>
+
+
+
+    <footer>
+      <p>Copyright © 2020 KazukiKoike All Right Reserved</p>
+    </footer>
+
+    <script>
+      $('.text').on('inview', function() {
+       $(this).addClass('fadeInRight');
+      });
+    </script>
+
+    <script>
+  (function(d) {
+    var config = {
+      kitId: 'vhp4nyc',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
+
+  </body>
+</html>
