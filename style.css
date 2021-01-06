@@ -54,12 +54,12 @@ p{
 .photos{
   text-align: center;
 }
+.photos img{
+  width:24%;
+}
 .photos img:hover{
   opacity: 0.8;
   transition: 0.5s;
-}
-.photos img{
-  width:24%;
 }
 .fadeInRight{
   transition: all 1s ease-in;
@@ -76,6 +76,10 @@ p{
   position: absolute;
   top: 10%;
   left: 5%;
+}
+#logo:hover{
+  opacity: 0.8;
+  transition: 0.5s;
 }
 #reve{
   width: 23%;
