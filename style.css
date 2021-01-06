@@ -18,6 +18,11 @@ a{
   color:rgb(45, 44, 44);
   font-weight: bold;
 }
+a:hover{
+  transition: 0.3s;
+  color:rgb(120, 120, 120);
+}
+
 footer p{
   font-size: 13px;
   color:rgb(28, 28, 28);
@@ -74,6 +79,11 @@ p{
   position: absolute;
   top: 90%;
   left: 65%;
+}
+
+#reve:hover{
+  transform: scale(1.03,1.03);
+  transition: 0.6s;
 }
 
 
