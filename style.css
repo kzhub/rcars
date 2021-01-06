@@ -33,13 +33,16 @@ footer p{
 p{
   font-family: proxima-nova, sans-serif;
 }
+.c2{
+  background-color: white;
+}
 .vox{
   width: 100%;
   position: relative;
 }
 .text{
   text-align: center;
-  margin: 120px;
+  padding: 120px;
   opacity:0;
 }
 
