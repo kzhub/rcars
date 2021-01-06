@@ -53,7 +53,10 @@ p{
 }
 .photos{
   text-align: center;
-
+}
+.photos img:hover{
+  opacity: 0.8;
+  transition: 0.5s;
 }
 .photos img{
   width:24%;
