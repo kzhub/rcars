@@ -156,4 +156,10 @@ a:hover{
   .parallax-bg {
     background-attachment: scroll;
   }
+  li{
+    padding: 3px;
+  }
+  a{
+    font-size: 13px;
+  }
 }
