@@ -1,5 +1,74 @@
-body{
-  margin: 0;
+body,
+html {
+  height: 100%;
+  margin: 0 auto;
+  letter-spacing: 2px;
+  font-size: 10px;
+}
+
+/*固定する背景*/
+div {
+  box-sizing: border-box;
+  color: #FFF;
+  font-size: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 5%;
+  position: relative;
+}
+.parallax-bg {
+  background-image: url('top.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/*スクロールするコンテンツ*/
+.scrollbox {
+  background-color: white;
+  display: block;
+  text-align: center;
+}
+
+.text p{
+  opacity: 0;
+  padding-right: 80px;
+}
+.text p{
+  color: rgb(102, 102, 102);
+  font-size: 16px;
+  letter-spacing:6px; /* 文字間 */
+  line-height:45px;/* 行間 */
+  font-family: fot-tsukubrdgothic-std, sans-serif;
+  text-align: center;
+  margin:  100px;
+}
+
+
+.pic img{
+  width: 25%;
+  margin: 5px;
+}
+.pic img:hover{
+  opacity: 0.8;
+  transition:0.6s;
+}
+.fadeInRight{
+  transition: all 1s ease-in;
+  transform: translateX(40px);
+  opacity: 1 !important;
+}
+
+footer p{
+  font-size: 13px;
+  color:rgb(94, 94, 94);
+  font-family: proxima-nova, sans-serif;
+  text-align: center;
+  font-weight: 200;
+  padding: 50px;
 }
 
 ul{
@@ -8,70 +77,21 @@ ul{
   position: absolute;
   top:10%;
   left: 65%;
+  font-size: 20px;
+  text-decoration: none;
 }
 li{
   padding: 10px;
-  font-family: proxima-nova, sans-serif;
 }
 a{
   text-decoration: none;
-  color:rgb(45, 44, 44);
+  font-family: proxima-nova, sans-serif;
   font-weight: bold;
+  color: rgb(68, 68, 68);
 }
 a:hover{
-  transition: 0.3s;
-  color:rgb(120, 120, 120);
-}
-
-footer p{
-  font-size: 13px;
-  color:rgb(28, 28, 28);
-  text-align: center;
-  font-weight: 200;
-  padding: 50px;
-}
-p{
-  font-family: proxima-nova, sans-serif;
-}
-.c2{
-  background-color: white;
-}
-.vox{
-  width: 100%;
-  position: relative;
-}
-.text{
-  text-align: center;
-  padding: 120px;
-  opacity:0;
-}
-
-.text p{
-  color: rgb(102, 102, 102);
-  letter-spacing:6px; /* 文字間 */
-  line-height:45px;/* 行間 */
-  font-family: fot-tsukubrdgothic-std, sans-serif;
-  text-align: center;
-  padding-right: 40px;
-}
-.photos{
-  text-align: center;
-}
-.photos img{
-  width:24%;
-}
-.photos img:hover{
-  opacity: 0.8;
-  transition: 0.5s;
-}
-.fadeInRight{
-  transition: all 1s ease-in;
-  transform: translateX(40px);
-  opacity: 1 !important;
-}
-
-#top{
-  width:100%;
+  color: rgb(125, 125, 125);
+  transition: 0.6s;
 }
 
 #logo{
@@ -82,28 +102,51 @@ p{
 }
 #logo:hover{
   opacity: 0.8;
-  transition: 0.5s;
+  transition:0.6s;
 }
 #reve{
   width: 23%;
   position: absolute;
   top: 90%;
   left: 65%;
+  z-index: 10;
 }
-
 #reve:hover{
-  transform: scale(1.03,1.03);
-  transition: 0.6s;
+  transform: scale(1.01,1.01);
+  transition:0.7s;
+}
+#sc{
+  position: absolute;
+  top: 67%;
+  left: 94%;
+}
+@media screen and (max-width: 1150px){
+ ul{
+   left: 54%;
+ }
+}
+@media screen and (max-width: 800px){
+ #logo{
+   width: 25%;
+   }
+
+   #reve{
+     width: 35%;
+   }
+   a{
+     font-size: 15px;
+   }
+   #sc{
+     top: 61%;
+     left: 87%;
+   }
 }
 
-
-@media screen and (max-width: 800px){
-  .text{
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 100px;
-  }
-  ul{
-    left: 35%;
-  }
+@media screen and (max-width: 600px){
+ ul{
+   left: 32%;
+}
+.text p{
+  margin: 100px 20px 100px 20px;
+}
 }
